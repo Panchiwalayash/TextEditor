@@ -1,14 +1,7 @@
-import react from 'react';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import { useState } from 'react';
 import Alert from './components/Alert';
-import About from './components/About';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
 
 
 function App() {
@@ -42,22 +35,11 @@ function App() {
   }
   return (
     <>
-      <Router>
         <Navbar title="Text Editor " mode={mode} toggleMode={toggleMode} but={but}></Navbar>
         <Alert alert={alert}></Alert>
         <div className="container my-2">
-          <Switch>
-            <Route exact path="/about">
-              <About mode={mode} heading='About Us' />
-            </Route>
-            <Route exact path="/">
-
-              <Textform heading="Enter the text below" mode={mode} sh></Textform>
-            </Route>
-          </Switch>
-
+              <Textform heading="Enter the text below" mode={mode} ></Textform>
         </div>
-      </Router>
     </>
   );
 }
