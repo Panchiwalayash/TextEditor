@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/TextEditor/static/js/main.5fc8c6cc.js",
+    "index.html": "/TextEditor/index.html",
+    "main.5fc8c6cc.js.map": "/TextEditor/static/js/main.5fc8c6cc.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5fc8c6cc.js"
+  ]
+}
